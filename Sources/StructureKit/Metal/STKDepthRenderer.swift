@@ -45,7 +45,7 @@ public class STKDepthRenderer {
   private var samplerState: MTLSamplerState
   private var device: MTLDevice
   private var intr: STKIntrinsics?
-  var depthRenderingColors = [simd_float4(1, 0, 0, 1), simd_float4(1, 1, 0, 1)] {  // red and yellow
+  var depthRenderingColors = [simd_float4(1, 0, 0, 1), simd_float4(0, 1, 0, 1)] {  // red and yellow
     didSet { updateColorTexture() }
   }
 
